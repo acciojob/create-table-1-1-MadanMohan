@@ -1,8 +1,8 @@
 function insert_Row() {
-    const t = document.getElementById("sampleTable");
+    const t = document.querySelector("#sampleTable tbody"); // select tbody
     const e = document.createElement("tr");
     e.innerHTML = "<td>New Cell1</td> <td>New Cell2</td>";
 
-    // Insert new row before the first existing row
-    t.insertBefore(e, t.firstChild);
+    // Insert before first row
+    t.insertBefore(e, t.firstElementChild);
 }
